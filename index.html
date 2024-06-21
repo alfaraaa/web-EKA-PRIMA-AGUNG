@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <link href="img/logo.jpg" rel="shortcut icon">
+   <title>Eka Prima Agung</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- Site Metas -->
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/fevicon.ico.png" type="image/x-icon" />
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Colors CSS -->
+   <link rel="stylesheet" href="css/colors.css">
+   <!-- ALL VERSION CSS -->
+   <link rel="stylesheet" href="css/versions.css">
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- building CSS -->
+   <link rel="stylesheet" href="css/building.css">
+   </head>
+   <style>
+    
+        /*Tombol Chat WhatsApp*/
+    .fixed-whatsapp{position:fixed;bottom:20px;right:20px;width:50px;height:50px;z-index:9999}
+    .fixed-whatsapp:before{content:"";background-repeat:no-repeat;background-size:34px 34px;background-position:center center;width:50px;height:50px;background-image:url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 24 24' width='32' height='32' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3cg%3e%3cpath style='fill:%23ffffff' d='M16.75,13.96C17,14.09 17.16,14.16 17.21,14.26C17.27,14.37 17.25,14.87 17,15.44C16.8,16 15.76,16.54 15.3,16.56C14.84,16.58 14.83,16.92 12.34,15.83C9.85,14.74 8.35,12.08 8.23,11.91C8.11,11.74 7.27,10.53 7.31,9.3C7.36,8.08 8,7.5 8.26,7.26C8.5,7 8.77,6.97 8.94,7H9.41C9.56,7 9.77,6.94 9.96,7.45L10.65,9.32C10.71,9.45 10.75,9.6 10.66,9.76L10.39,10.17L10,10.59C9.88,10.71 9.74,10.84 9.88,11.09C10,11.35 10.5,12.18 11.2,12.87C12.11,13.75 12.91,14.04 13.15,14.17C13.39,14.31 13.54,14.29 13.69,14.13L14.5,13.19C14.69,12.94 14.85,13 15.08,13.08L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12C4,13.72 4.54,15.31 5.46,16.61L4.5,19.5L7.39,18.54C8.69,19.46 10.28,20 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z'%3e%3c/path%3e%3c/g%3e%3c/svg%3e");background-color:#00C853;position:absolute;top:0;left:0;border-radius:100%;box-shadow:0 1px 1.5px 0 rgba(0,0,0,.12),0 1px 1px 0 rgba(0,0,0,.24)}
+  
+      /* Default styles */
+      p.supplier-distributor {
+        font-size: 60px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+      }
+
+      body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Mengatur kontainer utama */
+    #price {
+      background-color: #282c34; /* Menambahkan warna latar belakang */
+      padding: 20px; /* Menambahkan padding untuk kontainer */
+    }
+
+    /* Mengatur elemen paragraf agar berada di tengah halaman */
+    .supplier-container {
+      display: flex;
+      justify-content: center; /* Menyelaraskan secara horizontal */
+      align-items: center; /* Menyelaraskan secara vertikal */
+      height: 200px; /* Tinggi kontainer untuk teks */
+    }
+
+/* Mengatur elemen paragraf agar memiliki gaya yang diinginkan */
+p.supplier-distributor2 {
+    font-size: 38px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan teks */
+    color: white; /* Mengatur warna teks menjadi putih */
+    display: inline-block; /* Memastikan border sesuai dengan teks */
+    border: 3px solid black; /* Mengubah border menjadi hitam */
+    padding: 5px 10px; /* Menambahkan padding untuk membuat ruang antara teks dan border */
+    text-align: center; /* Mengatur teks agar berada di tengah secara horizontal */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)); /* Menambahkan gradien hitam yang lebih gelap */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+}
+
+
+
+    .container {
+      margin-top: 20px; /* Menambahkan jarak dari bagian atas */
+    }
+
+    .pricing-table {
+      text-align: center; /* Menyelaraskan teks dalam tabel harga di tengah */
+    }
+
+    .pricing-table img {
+      max-width: 100%; /* Membuat gambar responsif */
+    }
+
+      h3.bahan-bangunan {
+        font-size: 30px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow */
+      }
+  
+      /* Media query for mobile devices */
+      @media (max-width: 600px) {
+        p.supplier-distributor {
+          font-size: 30px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adjusting text shadow for mobile */
+        }
+        p.supplier-distributor2 {
+          font-size: 30px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adjusting text shadow for mobile */
+        }
+  
+        h3.bahan-bangunan {
+          font-size: 20px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adjusting text shadow for mobile */
+        }
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          // Ambil semua elemen <a> di dalam navigasi
+          var navLinks = document.querySelectorAll("#navbar ul.nav li a");
+  
+          // Loop melalui setiap link
+          navLinks.forEach(function(navLink) {
+              // Tambahkan event listener untuk setiap link
+              navLink.addEventListener("click", function(event) {
+                  // Hilangkan kelas 'active' dari semua elemen <li>
+                  navLinks.forEach(function(link) {
+                      link.parentElement.classList.remove("active");
+                  });
+  
+                  // Tambahkan kelas 'active' ke elemen <li> yang mengandung link yang diklik
+                  navLink.parentElement.classList.add("active");
+              });
+          });
+      });
+  </script>
+  
+    
+   <body class="building_version" data-spy="scroll" data-target=".header">
+      <!-- LOADER -->
+      <div id="preloader">
+         <img class="preloader" src="images/loaders/loader-building2.gif" alt="">
+      </div>
+      <!-- end loader -->
+      <!-- END LOADER -->
+      <header class="header header_style_01">
+         <nav class="megamenu navbar navbar-default" data-spy="affix">
+            <div class="top-header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-hidden">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-hidden">
+                           <div class="gem-contacts-item gem-contacts-phone">
+                              <a class="phone-icon" href="https://wa.me/+62895376554111?text=Hallo%20Eka%20Prima%20Agung" target="_blank" title="phone"><i class="fa fa-phone" aria-hidden="true"></i>WA +62 895-3765-54111</a>
+                           </div>
+                        </div>
+                        <div class="top-area-block top-area-socials socials-colored-hover">
+                           <div class="socials inline-inside"> 
+                              <a href="https://www.instagram.com/ekaprimaagung_official/" target="_blank" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a> <span style="color: white;">Instagram</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/logo-icon.png" alt="image"><span>PT EKA PRIMA AGUNG</span></a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                     <li class="active"><a data-scroll href="#home">BERANDA</a></li>
+                     <li><a data-scroll href="#about">TENTANG KAMI </a></li>
+                     <li><a data-scroll href="#price">SUPPLIER KAMI</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div id="home" class="parallax first-section" data-stellar-background-ratio="0.4" style="background-image:url('uploads/building/slide-img1.png');">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-md-offset-2 text-center">
+                  <div class="big-tagline">
+                     <img class="border-line-img" src="uploads/building/sep-line-white.png" alt="" />
+                     <p class="supplier-distributor"><span class="yellow">Supplier & Distributor</span></p>
+                     <h3 class="bahan-bangunan"><span class="yellow">Bahan Bangunan Terbaik !</span></h3>
+                     <img style="margin-bottom:40px;" class="border-line-img" src="uploads/building/sep-line-white.png" alt="" />
+                     <p style="font-size: 18px;color: white;">Kawasan Industri Candi Blok 7 No 8-9, Jl. Gatot Subroto, Ngaliyan, Semarang.</p>
+                     <a data-scroll href="https://wa.me/+62895376554111?text=Hallo%20Eka%20Prima%20Agung" class="btn btn-light btn-radius btn-brd">Hubungi Kami</a>
+                  </div>
+               </div>
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </div>
+      <!-- end section -->
+      <div id="about" class="section wb">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <h2>TENTANG KAMI</h2>
+                     <h5>PT EKA PRIMA AGUNG <br>Supplier dan Distributor Bahan Bangunan Jawa Tengah !</h5>
+                  </div>
+                  <!-- end messagebox -->
+               </div>
+               <!-- end col -->
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                  <div class="message-box">
+                     <p class="lead">Berdiri sejak tahun 1996 dengan nama Prima Keramik sebagai distributor Granito Tile pertama dengan area distribusi pada awal di wilayah Jawa Tengah dan DIY. Seiring bertambahnya waktu, produk yang kami bawa pun juga bertambah dan kami berubah menjadi PT EKA PRIMA AGUNG pada tahun 2009, dan area pemasaran kami meliputi seluruh Wilayah Jawa Tengah.</p>
+                  </div>
+                  <!-- <div class="row g-4 mb-5">
+                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                         <i class="fa fa-globe fa-3x mb-3"></i>
+                         <h5>Area Layanan Kami</h5>
+                         <p class="m-0">Layanan kami meliputi seluruh Wilayah Jawa Tengah</p>
+                     </div>
+                     <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                        <i class="fa fa-truck fa-3x  mb-3"></i>
+                         <h5>Pengiriman Tepat Waktu</h5>
+                         <p class="m-0">Kami akan melayani pengiriman Anda tepat waktu.</p>
+                     </div>
+                 </div> -->
+                  <!-- end messagebox -->
+               </div>
+               <!-- end col -->
+               
+            </div>
+            <!-- end row -->
+            <div class="row text-center about-row">
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                           <a href="uploads/building_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                           <img src="uploads/building_01.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <h3>Produk Berkualitas</h3>
+                        <p>Kami menyediakan berbagai jenis bahan bangunan berkualitas tinggi, Produk kami dipilih dengan teliti untuk memastikan kepuasan pelanggan.</p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                           <a href="uploads/building_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                           <img src="uploads/building_02.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <h3>Layanan Pelanggan Prima</h3>
+                        <p>Kami siap membantu Anda dengan ramah dan profesional, solusi terbaik untuk kebutuhan dan masalah yang Anda hadapi dalam proyek konstruksi.</p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-12 col-xs-12">
+                  <div class="row">
+                     <div class="service-widget">
+                        <div class="post-media wow fadeIn">
+                           <a href="uploads/building_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
+                           <img src="uploads/building_03.jpg" alt="" class="img-responsive img-rounded">
+                        </div>
+                        <h3>Harga Kompetitif</h3>
+                        <p>Kami akan memberikan harga yang kompetitif tanpa mengurangi kualitas produk, dengan menjalin kerjasama langsung dengan produsen.
+                        </p>
+                     </div>
+                     <!-- end service -->
+                  </div>
+               </div>
+            </div>
+            <!-- end row -->
+         </div>
+         
+         <!-- end container -->
+         <div class="sep1"></div>
+      </div>
+
+      <div id="contact" class="section wb">
+         <div class="container">
+            <div class="section-title row text-center">
+               <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                  <h3 class="mb-5">VISI & MISI </h3>
+              </div>
+            </div>
+         <div class="container py-5">
+            
+             <h5 class="mb-3">VISI :</h5>
+             <p style="font-size: 18px;">
+             Menjadi distributor bahan bangunan yang terpercaya untuk para supplier dan rekan
+             bisnis kami. Serta berusaha memberikan hasil yang optimal untuk para supplier kami
+             dan berusaha memberikan pelayanan terbaik untuk rekan bisnis kami.<br><br></p>
+             <h5 class="mb-3">MISI :</h5>
+         
+             <ul>
+             <li><p style="font-size: 18px;">Menetapkan kualitas manajemen perusahaan yang terbaik dari manajemen
+                 perusahaan dan segi pelayanan terhadap rekan bisnis kami.</p>
+             </li>
+             <li><p style="font-size: 18px;">Mengembangkan jaringan distribusi keseluruh wilayah Indonesia.</p>
+             </li>
+             <li><p style="font-size: 18px;">Mempersiapkan segala kebutuhan standart perusahaan dari SDM dan sistem
+                 perusahaan dalam menghadapi pasar bebas (free trade).</p>
+             </li>
+         </ul><br>
+         </div>
+     <!-- Visi Misi End -->
+         </div>
+         <!-- end container -->
+      </div>
+    
+      <!-- end section -->
+      <div id="testimonials" class="section db">
+         <div class="container">
+            <div class="section-title row text-center">
+               <div class="col-md-8 col-md-offset-2">
+                  <h3>TESTIMONI</h3>
+                  <p class="lead">Pendapat dari Klien & Customer Kami</p>
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end title -->
+            <div class="row">
+               <div class="col-md-12 col-sm-12">
+                  <div class="testi-carousel owl-carousel owl-theme">
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Michael 11</h3><img src="uploads/tes-1.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">Terpercaya dan berkualitas...👍💗</p>
+                        </div>
+                     </div>
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Betty Sumirat</h3><img src="uploads/tes-4.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">Tempat nya nyaman, akses mudah, pelayanannya luar biasa</p>
+                        </div>
+                     </div>
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Nancy Pantow</h3><img src="uploads/tes-2.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">pelayanan terbaik,<br> keep up the good work.</p>
+                        </div>
+                     </div>  
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Dwi Gatot Suprasetya</h3><img src="uploads/tes-6.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">Tempatnya aman mudah dijangkau pelayanannya ramah.</p>
+                        </div>
+                     </div>
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Yuliana Christina</h3><img src="uploads/tes-5.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">pelayanan responsif dan ramah 👍🙏</p>
+                        </div>
+                     </div>
+                     <!-- end testimonial -->
+                     <div class="testimonial clearfix">
+                        <div class="desc">
+                           <h3><i class="fa fa-quote-left"></i>Sulistyo Budi Wibowo</h3><img src="uploads/tes-3.png" alt="" class="img-responsive alignleft">
+                           <p class="lead">Gudang yang modern dan nyaman, produk lengkap dan berkualitas...</p>
+                        </div>
+                     </div>
+                     <!-- end testimonial -->
+                  </div>
+                  <!-- end carousel -->
+               </div>
+               <!-- end col -->
+            </div>
+            <!-- end row -->
+         </div>
+         <!-- end container -->
+      </div>
+      
+      <div id="price" class="section pr">
+         <div class="supplier-container">
+           <p class="supplier-distributor2"><span>SUPPLIER KAMI</span></p>
+         </div>
+         <div class="container">
+           <div class="row">
+             <div class="col-md-3">
+               <div class="pricing-table">
+                 <div class="pricing-table-header">
+                   <h2>GRANITO</h2>
+                 </div>
+                 <img src="images/granito.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                  <a href="https://granito.co.id/id/" data-scroll="" class="btn btn-dark btn-radius btn-brd" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <div class="pricing-table pricing-table-highlighted">
+                 <div class="pricing-table-header grd1">
+                   <h2>ATESON</h2>
+                 </div>
+                 <img src="images/ateson.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                   <a href="https://atesonhome.com/" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <div class="pricing-table">
+                 <div class="pricing-table-header">
+                   <h2>AMSTAD</h2>
+                 </div>
+                 <img src="images/amstad.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                   <a href="https://www.americanstandard.co.id/" data-scroll="" class="btn btn-dark btn-radius btn-brd" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+             <div class="col-md-3">
+               <div class="pricing-table pricing-table-highlighted">
+                 <div class="pricing-table-header grd1">
+                   <h2>WAVIN</h2>
+                 </div>
+                 <img src="images/wavin.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                   <a href="https://www.wavin.com/id-id" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row">
+            <div class="col-md-3">
+               <div class="pricing-table pricing-table-highlighted">
+                 <div class="pricing-table-header grd1">
+                   <h2>RB SHERA</h2>
+                 </div>
+                 <img src="images/rb-shera.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                   <a href="https://rbshera.co.id/" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+            <div class="col-md-3">
+              <div class="pricing-table">
+                <div class="pricing-table-header">
+                  <h2>DJABESMEN</h2>
+                </div>
+                <img src="images/djabesmen.png" width="200" height="120">
+                <div class="pricing-table-sign-up">
+                  <a href="https://www.djabesmen.co.id/id" data-scroll="" class="btn btn-dark btn-radius btn-brd" target="_blank">-> Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+               <div class="pricing-table pricing-table-highlighted">
+                 <div class="pricing-table-header grd1">
+                   <h2>PRIMEGRASS</h2>
+                 </div>
+                 <img src="images/prime.png" width="200" height="120">
+                 <div class="pricing-table-sign-up">
+                   <a href="https://www.instagram.com/primegrass.id/" data-scroll="" class="btn btn-light btn-radius btn-brd grd1 effect-1" target="_blank">-> Selengkapnya</a>
+                 </div>
+               </div>
+             </div>
+            <div class="col-md-3">
+              <div class="pricing-table">
+                <div class="pricing-table-header">
+                  <h2>MINE STONE</h2>
+                </div>
+                <img src="images/minestone.png" width="200" height="120">
+                <div class="pricing-table-sign-up">
+                  <a href="https://www.instagram.com/mine_stone.id/" data-scroll="" class="btn btn-dark btn-radius btn-brd" target="_blank">-> Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!-- end row -->
+         </div>
+       </div>
+    
+      <!-- end section -->
+      <!-- footer -->
+      <footer id="footer">
+         <div id="footer-widgets" class="container style-1">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="widget widget_text">
+                     <h2 class="widget-title"><span>TENTANG KAMI</span></h2>
+                     <div class="textwidget">
+                        <a class="navbar-brand" href="index-building.html"><img src="images/logo-icon.png" alt="image"><span>PT EKA PRIMA AGUNG</span></a>
+                        <p>Supplier dan Distributor Bahan Bangunan <br>Jawa Tengah TERBAIK untuk Anda !</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="widget widget_links">
+                     <h2 class="widget-title"><span>KLIK TAUTAN</span></h2>
+                     <ul class="wprt-links clearfix col2">
+                        <li><a data-scroll="" href="#home">BERANDA</a></li>  
+                        <li><a data-scroll="" href="#price">SUPPLIER KAMI</a></li> 
+                        <li><a data-scroll="" href="#about">TENTANG KAMI</a></li>
+                        <li><a data-scroll="" href="https://www.instagram.com/ekaprimaagung_official/" target="_blank"><i class="fa fa-instagram"></i> INSTAGRAM</a></li>
+					 </ul>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="widget widget_information">
+                     <h2 class="widget-title"><span>INFO SELENGKAPNYA</span></h2>
+                     <ul>
+                        <li class="address clearfix">
+                           <span class="hl">Alamat :</span>
+                           <span class="text">Kawasan Industri Candi Blok 7 No 8-9, Jl. Gatot Subroto, Ngaliyan, Semarang</span>
+                        </li>
+                        <li class="phone clearfix">
+                           <span class="hl">WA :</span> 
+                           <span class="text">+62 895-3765-54111</span>
+                        </li>
+                        <li class="email clearfix">
+                           <span class="hl">E-mail :</span>
+                           <span class="text">ekaprimaagung@gmail.com</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="bottom" class="clearfix style-1">
+            <div class="container">
+               <div id="bottom-bar-inner" class="wprt-container">
+                  <div class="bottom-bar-inner-wrap">
+                     <div class="bottom-bar-content">
+                        <div id="copyright">All Rights Reserved. PT EKA PRIMA AGUNG © 2024</div>
+                        <!-- /#copyright -->
+                     </div>
+                     <!-- /.bottom-bar-content -->
+                     <!-- <div class="bottom-bar-menu pull-right">
+                        <ul class="bottom-nav">
+                           <li><a href="#/">HISTORY</a></li>
+                           <li><a href="#/">FAQ</a></li>
+                           <li><a href="#/">EVENTS</a></li>
+                        </ul>
+                     </div> -->
+                     <!-- /.bottom-bar-menu -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+       <!-- Back to Top -->
+        <a class='fixed-whatsapp' href='https://wa.me/+62895376554111?text=Hallo%20Eka%20Prima%20Agung' rel='nofollow noopener' target='_blank' title='Whatsapp'></a>
+
+      <!-- end footer -->
+      <!-- <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a> -->
+      <!-- ALL JS FILES -->
+      <script src="js/all.js"></script>
+      <!-- ALL PLUGINS -->
+      <script src="js/custom.js"></script>
+      <script src="js/portfolio.js"></script>
+      <script src="js/hoverdir.js"></script>   
+   </body>
+</html>
+
